@@ -1,35 +1,21 @@
-import { Search } from "@material-ui/icons";
-import React from "react";
-import {
-  TwitterTimelineEmbed,
-  TwitterShareButton,
-  TwitterTweetEmbed,
-} from "react-twitter-embed";
-import "./Widgets.css";
+import React from 'react';
+import './Widgets.css';
+import { TwitterTimelineEmbed, TwitterShareButton, TwitterTweetEmbed } from 'react-twitter-embed';
+import SearchIcon from '@mui/icons-material/Search';
 
 function Widgets() {
   return (
-    <div className="widgets">
-      <div className="widgets__input">
-        <Search className="widgets__searchIcon" />
-        <input placeholder="Search Twitter" type="text" />
-      </div>
-
-      <div className="widgets__widgetContainer">
-        <h2>What's happening</h2>
-        <TwitterTweetEmbed tweetId={"1307046632517664771"} />
-        <TwitterTimelineEmbed
-          sourceType="profile"
-          screenName="atharvabrand"
-          options={{ height: 400 }}
-        />
-        <TwitterShareButton
-          url={"https://atharvadeosthale.com"}
-          options={{ text: "React Developer" }}
-        />
-      </div>
+    <div className='widgets'>
+        <div className='widgets-input'>
+          <SearchIcon className='widget-search-icon' />
+          <input placeholder="Search Twitter" type="text"></input>
+        </div>
+        <div className="widgets-container">
+          <h2>What's happening</h2>
+          {}
+        </div>
     </div>
   );
 }
 
-export default Widgets;
+export default Widgets

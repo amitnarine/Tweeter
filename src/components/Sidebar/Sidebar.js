@@ -1,35 +1,44 @@
-import React from "react";
-import "./Sidebar.css";
-import SidebarOption from "./SidebarOption";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import HomeIcon from "@material-ui/icons/Home";
-import SearchIcon from "@material-ui/icons/Search";
-import NotificationsNoneIcon from "@material-ui/icons/NotificationsNone";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
-import ListAltIcon from "@material-ui/icons/ListAlt";
-import PermIdentityIcon from "@material-ui/icons/PermIdentity";
-import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
-import { Button } from "@material-ui/core";
+import React from 'react'
+import './Sidebar.css';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import SidebarOption from './SidebarOption';
+import HomeIcon from '@mui/icons-material/Home';
+import TagIcon from '@mui/icons-material/Tag';
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
+import ListIcon from '@mui/icons-material/List';
+import PermIdentityIcon from '@mui/icons-material/PermIdentity';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import { Button } from '@mui/material'
 
 function Sidebar() {
   return (
-    <div className="sidebar">
-      <TwitterIcon className="sidebar__twitterIcon" />
-      <SidebarOption Icon={HomeIcon} text="Home" active={true} />
-      <SidebarOption Icon={SearchIcon} text="Explore" />
-      <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" />
-      <SidebarOption Icon={MailOutlineIcon} text="Messages" />
-      <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" />
-      <SidebarOption Icon={ListAltIcon} text="Lists" />
-      <SidebarOption Icon={PermIdentityIcon} text="Profile" />
-      <SidebarOption Icon={MoreHorizIcon} text="More" />
+    <div className='sidebar'>
+        {/* Twitter icon */}
+        <TwitterIcon className='twitter-icon' />
 
-      <Button variant="outlined" className="sidebar__tweet" fullWidth>
-        Tweet
-      </Button>
+        {/* Sidebar Option */}
+        <SidebarOption active Icon={ HomeIcon } text="Home" />
+        {/* Sidebar Option */}
+        <SidebarOption Icon={ TagIcon }text="Explore" />
+        {/* Sidebar Option */}
+        <SidebarOption Icon={ NotificationsNoneIcon } text="Notifications" />
+        {/* Sidebar Option */}
+        <SidebarOption Icon={ MailOutlineIcon } text="Messages" />
+        {/* Sidebar Option */}
+        <SidebarOption Icon={ BookmarkBorderIcon } text="Bookmarks" />
+        {/* Sidebar Option */}
+        <SidebarOption Icon={ ListIcon } text="Lists" />
+        {/* Sidebar Option */}
+        <SidebarOption Icon={ PermIdentityIcon } text="Profile" />
+        {/* Sidebar Option */}
+        <SidebarOption Icon={ MoreHorizIcon }text="More" />
+
+        {/* Tweet button */}
+        <Button variant="contained" className="tweet-button" fullWidth>Tweet</Button>
     </div>
-  );
+  )
 }
 
-export default Sidebar;
+export default Sidebar

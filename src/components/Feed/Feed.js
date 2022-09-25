@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
 import "./Feed.css";
+import React, { useEffect, useState } from "react";
 import Post from "./Post";
 import TweetBox from "./TweetBox";
 //import db from "./firebase";
@@ -16,7 +16,7 @@ function Feed() {
 
   return (
     <div className="feed">
-      <div className="feed__header">
+      <div className="feed-header">
         <h2>Home</h2>
       </div>
       <TweetBox />
