@@ -1,7 +1,7 @@
 import React from 'react'
 import './Post.css';
 import { Avatar } from '@mui/material';
-import { deepOrange } from '@mui/material/colors';
+//import { deepOrange } from '@mui/material/colors';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import RepeatIcon from '@mui/icons-material/Repeat';
